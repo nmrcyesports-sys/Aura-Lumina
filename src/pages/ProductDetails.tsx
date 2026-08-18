@@ -59,7 +59,7 @@ export function ProductDetails() {
                 </button>
               ))}
             </div>
-            <div className="flex-1 bg-zinc-100 relative overflow-hidden group">
+            <div className="flex-1 bg-white relative overflow-hidden group">
               <AnimatePresence mode="wait">
                 <motion.img
                   key={activeImage}

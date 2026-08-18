@@ -62,7 +62,7 @@ export function CartDrawer() {
                 <div className="space-y-6">
                   {cart.map((item) => (
                     <div key={`${item.id}-${item.selectedSize}`} className="flex gap-4 group">
-                      <div className="w-24 h-32 bg-zinc-100 relative overflow-hidden">
+                      <div className="w-24 h-32 bg-white relative overflow-hidden">
                         <img
                           src={item.images[0]}
                           alt={item.name}

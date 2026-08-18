@@ -288,7 +288,7 @@ export function Checkout() {
               <div className="space-y-4 mb-6 max-h-[40vh] overflow-y-auto pr-2 no-scrollbar">
                 {cart.map(item => (
                   <div key={`${item.id}-${item.selectedSize}`} className="flex gap-4">
-                    <div className="w-16 h-20 bg-zinc-100 flex-shrink-0 relative">
+                    <div className="w-16 h-20 bg-white flex-shrink-0 relative">
                       <img src={item.images[0]} alt="" className="w-full h-full object-cover" />
                       <span className="absolute -top-2 -right-2 w-5 h-5 bg-zinc-500 text-white text-[10px] flex items-center justify-center rounded-full z-10">
                         {item.quantity}

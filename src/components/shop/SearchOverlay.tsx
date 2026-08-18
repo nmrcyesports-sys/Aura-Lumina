@@ -98,7 +98,7 @@ export function SearchOverlay({ isOpen, onClose }: { isOpen: boolean; onClose: (
                         onClick={() => handleProductClick(product.id)}
                         className="flex gap-4 cursor-pointer group"
                       >
-                        <div className="w-20 h-24 bg-zinc-100 overflow-hidden">
+                        <div className="w-20 h-24 bg-white overflow-hidden">
                           <img
                             src={product.images[0]}
                             alt={product.name}

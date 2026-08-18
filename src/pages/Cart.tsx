@@ -58,7 +58,7 @@ export function Cart() {
             {cart.map((item) => (
               <div key={`${item.id}-${item.selectedSize}`} className="grid grid-cols-1 md:grid-cols-12 gap-4 items-center">
                 <div className="col-span-1 md:col-span-6 flex gap-6">
-                  <Link to={`/product/${item.id}`} className="w-24 h-32 bg-zinc-100 flex-shrink-0 relative overflow-hidden group">
+                  <Link to={`/product/${item.id}`} className="w-24 h-32 bg-white flex-shrink-0 relative overflow-hidden group">
                     <img
                       src={item.images[0]}
                       alt={item.name}

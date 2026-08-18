@@ -53,11 +53,12 @@ export function Shop() {
   return (
     <div className="pt-24 pb-32">
       {/* Header */}
-      <div className="bg-zinc-50 py-16 px-4 text-center border-b border-zinc-200">
-        <h1 className="font-serif text-4xl sm:text-5xl text-zinc-900 mb-4">
+      <div className="bg-[#030303] py-24 px-4 text-center relative overflow-hidden">
+        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-2xl h-full bg-[radial-gradient(ellipse_at_top,rgba(153,122,61,0.2)_0%,transparent_70%)] pointer-events-none" />
+        <h1 className="font-serif text-5xl sm:text-7xl text-white mb-6 relative z-10 tracking-tight">
           {categoryFilter ? `${categoryFilter}'s Collection` : collectionFilter && collectionFilter !== 'all' ? collectionFilter : 'All Fragrances'}
         </h1>
-        <p className="text-zinc-500 uppercase tracking-widest text-sm">
+        <p className="text-[#997A3D] uppercase tracking-[0.4em] text-[10px] font-bold relative z-10">
           Discover our meticulously crafted creations
         </p>
       </div>
@@ -196,7 +197,7 @@ export function Shop() {
                   key={product.id}
                   className="group cursor-pointer flex flex-col"
                 >
-                  <Link to={`/product/${product.id}`} className="block relative aspect-[3/4] bg-zinc-100 overflow-hidden mb-6">
+                  <Link to={`/product/${product.id}`} className="block relative aspect-[3/4] bg-white overflow-hidden mb-6">
                     <img
                       src={product.images[0]}
                       alt={product.name}

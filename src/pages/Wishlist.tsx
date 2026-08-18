@@ -43,7 +43,7 @@ export function Wishlist() {
               <X className="w-4 h-4" />
             </button>
 
-            <Link to={`/product/${product.id}`} className="block relative aspect-[3/4] bg-zinc-100 overflow-hidden mb-4">
+            <Link to={`/product/${product.id}`} className="block relative aspect-[3/4] bg-white overflow-hidden mb-4">
               <img
                 src={product.images[0]}
                 alt={product.name}

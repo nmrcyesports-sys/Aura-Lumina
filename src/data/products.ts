@@ -25,6 +25,7 @@ export interface Product {
 }
 
 export const products: Product[] = [
+  // Luxury Noir Collection
   {
     id: "p1",
     name: "Midnight Velvet",
@@ -33,7 +34,6 @@ export const products: Product[] = [
     price: 245,
     images: [
       "https://images.unsplash.com/photo-1594035910387-fea47794261f?q=80&w=2000&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1592914610354-fd354ea45e48?q=80&w=2000&auto=format&fit=crop",
       "https://images.unsplash.com/photo-1616843413587-9e3a37f7bbd8?q=80&w=2000&auto=format&fit=crop"
     ],
     category: "Men",
@@ -53,6 +53,62 @@ export const products: Product[] = [
     tags: ["Best Seller", "Evening", "Winter"]
   },
   {
+    id: "p7",
+    name: "Obsidian Night",
+    brand: "NOIR ELIXIR",
+    description: "A commanding presence. Obsidian Night utilizes raw black truffle, ylang-ylang, and a hint of dark chocolate to create an unforgettable, devastatingly chic scent.",
+    price: 295,
+    images: [
+      "https://images.unsplash.com/photo-1622618991746-fe6004db3a47?q=80&w=2000&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1585386959984-a4155224a1ad?q=80&w=2000&auto=format&fit=crop"
+    ],
+    category: "Unisex",
+    collection: "Luxury Noir",
+    fragranceFamily: "Earthy Oriental",
+    notes: {
+      top: ["Black Truffle", "Ylang-Ylang", "Bergamot"],
+      heart: ["Black Orchid", "Dark Chocolate", "Plum"],
+      base: ["Patchouli", "Incense", "Vetiver"]
+    },
+    longevity: "12+ hours",
+    sillage: "Heavy",
+    rating: 4.8,
+    reviews: 201,
+    stock: 25,
+    sizes: ["50ml"],
+    tags: ["Seductive", "Evening", "New Arrival"]
+  },
+  {
+    id: "p8",
+    name: "Velvet Shadow",
+    brand: "AURA LUMINA",
+    description: "Dark, powdery, and intensely intimate. Velvet Shadow wraps you in an aura of crushed violet petals, dark iris, and smooth black suede.",
+    price: 260,
+    originalPrice: 300,
+    discount: 13,
+    images: [
+      "https://images.unsplash.com/photo-1599305090598-fe179d501227?q=80&w=2000&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1616843413587-9e3a37f7bbd8?q=80&w=2000&auto=format&fit=crop"
+    ],
+    category: "Women",
+    collection: "Luxury Noir",
+    fragranceFamily: "Floral Leather",
+    notes: {
+      top: ["Blackberry", "Saffron", "Iris"],
+      heart: ["Violet", "Night-blooming Jasmine", "Suede"],
+      base: ["Black Musk", "Birch Tar", "Vanilla"]
+    },
+    longevity: "9-11 hours",
+    sillage: "Moderate",
+    rating: 4.7,
+    reviews: 156,
+    stock: 40,
+    sizes: ["50ml", "100ml"],
+    tags: ["Evening", "Romantic"]
+  },
+
+  // Luminance Collection
+  {
     id: "p2",
     name: "Ethereal Silk",
     brand: "AURA LUMINA",
@@ -60,7 +116,7 @@ export const products: Product[] = [
     price: 195,
     images: [
       "https://images.unsplash.com/photo-1588405748880-12d1d2a59f75?q=80&w=2000&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1595425970377-c9703bc48baf?q=80&w=2000&auto=format&fit=crop"
+      "https://images.unsplash.com/photo-1585386959984-a4155224a1ad?q=80&w=2000&auto=format&fit=crop"
     ],
     category: "Women",
     collection: "Luminance",
@@ -79,6 +135,60 @@ export const products: Product[] = [
     tags: ["New Arrival", "Spring", "Daytime"]
   },
   {
+    id: "p9",
+    name: "Pearl Radiance",
+    brand: "MAISON VERT",
+    description: "A sparkling, effervescent fragrance that radiates pure joy. Pearl Radiance combines luminous citrus with soft white florals for a brilliantly bright scent.",
+    price: 185,
+    images: [
+      "https://images.unsplash.com/photo-1599305090598-fe179d501227?q=80&w=2000&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1622618991746-fe6004db3a47?q=80&w=2000&auto=format&fit=crop"
+    ],
+    category: "Women",
+    collection: "Luminance",
+    fragranceFamily: "Citrus Floral",
+    notes: {
+      top: ["Mandarin", "Bergamot", "Pink Grapefruit"],
+      heart: ["Orange Blossom", "Honeysuckle", "Magnolia"],
+      base: ["White Amber", "Musk", "Cedar"]
+    },
+    longevity: "7 hours",
+    sillage: "Moderate",
+    rating: 4.9,
+    reviews: 312,
+    stock: 65,
+    sizes: ["50ml", "100ml"],
+    tags: ["Summer", "Daytime", "Best Seller"]
+  },
+  {
+    id: "p10",
+    name: "Solar Flare",
+    brand: "AURA LUMINA",
+    description: "Warm, radiant, and opulent. Solar Flare captures the golden hour in a bottle, featuring sun-drenched white flowers and warm golden resins.",
+    price: 215,
+    images: [
+      "https://images.unsplash.com/photo-1594035910387-fea47794261f?q=80&w=2000&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1599305090598-fe179d501227?q=80&w=2000&auto=format&fit=crop"
+    ],
+    category: "Unisex",
+    collection: "Luminance",
+    fragranceFamily: "Solar Amber",
+    notes: {
+      top: ["Neroli", "Petitgrain", "Coconut Water"],
+      heart: ["Ylang-Ylang", "Tiare Flower", "Jasmine Sambac"],
+      base: ["Vanilla", "Benzoin", "Sandalwood"]
+    },
+    longevity: "8-10 hours",
+    sillage: "Strong",
+    rating: 4.6,
+    reviews: 98,
+    stock: 45,
+    sizes: ["100ml"],
+    tags: ["Summer", "Vacation"]
+  },
+
+  // Elements Collection
+  {
     id: "p3",
     name: "Oasis Mirage",
     brand: "MAISON VERT",
@@ -87,8 +197,8 @@ export const products: Product[] = [
     originalPrice: 250,
     discount: 16,
     images: [
-      "https://images.unsplash.com/photo-1592914610354-fd354ea45e48?q=80&w=2000&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1594035910387-fea47794261f?q=80&w=2000&auto=format&fit=crop"
+      "https://images.unsplash.com/photo-1585386959984-a4155224a1ad?q=80&w=2000&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1599305090598-fe179d501227?q=80&w=2000&auto=format&fit=crop"
     ],
     category: "Unisex",
     collection: "Elements",
@@ -107,31 +217,59 @@ export const products: Product[] = [
     tags: ["Summer", "Fresh", "Signature"]
   },
   {
-    id: "p4",
-    name: "Crimson Ember",
+    id: "p11",
+    name: "Terracotta Rain",
     brand: "NOIR ELIXIR",
-    description: "A passionate and fiery fragrance that commands attention. Crimson Ember mixes sweet cherry with roasted almonds and deep woods.",
-    price: 285,
+    description: "The distinct, beautiful scent of rain hitting warm, dry earth. Petrichor distilled into an elegant, grounded fragrance.",
+    price: 230,
     images: [
-      "https://images.unsplash.com/photo-1616843413587-9e3a37f7bbd8?q=80&w=2000&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1588405748880-12d1d2a59f75?q=80&w=2000&auto=format&fit=crop"
+      "https://images.unsplash.com/photo-1622618991746-fe6004db3a47?q=80&w=2000&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1594035910387-fea47794261f?q=80&w=2000&auto=format&fit=crop"
     ],
-    category: "Women",
-    collection: "Luxury Noir",
-    fragranceFamily: "Fruity Gourmand",
+    category: "Unisex",
+    collection: "Elements",
+    fragranceFamily: "Earthy Woody",
     notes: {
-      top: ["Black Cherry", "Bitter Almond", "Plum"],
-      heart: ["Turkish Rose", "Jasmine Sambac", "Cinnamon"],
-      base: ["Tonka Bean", "Vanilla", "Sandalwood"]
+      top: ["Ozone", "Rain Accord", "Bergamot"],
+      heart: ["Geosmin", "Iris Root", "Patchouli"],
+      base: ["Vetiver", "Cedar", "Oakmoss"]
     },
-    longevity: "12+ hours",
-    sillage: "Heavy",
-    rating: 4.9,
-    reviews: 312,
-    stock: 15,
-    sizes: ["50ml"],
-    tags: ["Seductive", "Evening", "Best Seller"]
+    longevity: "9 hours",
+    sillage: "Moderate",
+    rating: 4.8,
+    reviews: 145,
+    stock: 35,
+    sizes: ["50ml", "100ml"],
+    tags: ["Earthy", "Signature"]
   },
+  {
+    id: "p12",
+    name: "Arctic Pine",
+    brand: "MAISON VERT",
+    description: "Crisp, cold, and utterly invigorating. Like taking a deep breath in a snow-covered evergreen forest under the northern lights.",
+    price: 195,
+    images: [
+      "https://images.unsplash.com/photo-1622618991746-fe6004db3a47?q=80&w=2000&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1585386959984-a4155224a1ad?q=80&w=2000&auto=format&fit=crop"
+    ],
+    category: "Men",
+    collection: "Elements",
+    fragranceFamily: "Woody Aromatic",
+    notes: {
+      top: ["Juniper Berry", "Mint", "Eucalyptus"],
+      heart: ["Siberian Pine", "Fir Balsam", "Cypress"],
+      base: ["Silver Birch", "Musk", "Ambergris"]
+    },
+    longevity: "10 hours",
+    sillage: "Strong",
+    rating: 4.5,
+    reviews: 76,
+    stock: 50,
+    sizes: ["100ml"],
+    tags: ["Winter", "Fresh"]
+  },
+
+  // Heritage Collection
   {
     id: "p5",
     name: "Gilded Vetiver",
@@ -139,7 +277,7 @@ export const products: Product[] = [
     description: "An aristocratic take on classic vetiver. Refined, sharp, and incredibly sophisticated.",
     price: 180,
     images: [
-      "https://images.unsplash.com/photo-1595425970377-c9703bc48baf?q=80&w=2000&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1585386959984-a4155224a1ad?q=80&w=2000&auto=format&fit=crop",
       "https://images.unsplash.com/photo-1594035910387-fea47794261f?q=80&w=2000&auto=format&fit=crop"
     ],
     category: "Men",
@@ -157,32 +295,6 @@ export const products: Product[] = [
     stock: 60,
     sizes: ["50ml", "100ml", "200ml"],
     tags: ["Office", "Classic"]
-  },
-  {
-    id: "p6",
-    name: "Cashmere Blanc",
-    brand: "MAISON VERT",
-    description: "Like wrapping yourself in a warm, expensive cashmere blanket. Soft, powdery, and comforting.",
-    price: 220,
-    images: [
-      "https://images.unsplash.com/photo-1592914610354-fd354ea45e48?q=80&w=2000&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1588405748880-12d1d2a59f75?q=80&w=2000&auto=format&fit=crop"
-    ],
-    category: "Unisex",
-    collection: "Luminance",
-    fragranceFamily: "Floral Musk",
-    notes: {
-      top: ["Aldehydes", "White Rose"],
-      heart: ["Peony", "Violet", "Orange Blossom"],
-      base: ["White Musk", "Cashmeran", "Sandalwood"]
-    },
-    longevity: "10 hours",
-    sillage: "Intimate",
-    rating: 4.8,
-    reviews: 142,
-    stock: 80,
-    sizes: ["100ml"],
-    tags: ["Cozy", "Everyday"]
   }
 ];
 
@@ -197,12 +309,12 @@ export const collections = [
     id: "c2",
     name: "Luminance",
     description: "Light, floral, and ethereal.",
-    image: "https://images.unsplash.com/photo-1588405748880-12d1d2a59f75?q=80&w=2000&auto=format&fit=crop"
+    image: "https://images.unsplash.com/photo-1599305090598-fe179d501227?q=80&w=2000&auto=format&fit=crop"
   },
   {
     id: "c3",
     name: "Elements",
     description: "Inspired by the raw forces of nature.",
-    image: "https://images.unsplash.com/photo-1592914610354-fd354ea45e48?q=80&w=2000&auto=format&fit=crop"
+    image: "https://images.unsplash.com/photo-1622618991746-fe6004db3a47?q=80&w=2000&auto=format&fit=crop"
   }
 ];

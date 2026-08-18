@@ -55,12 +55,12 @@ export function Navbar({ onOpenSearch }: { onOpenSearch: () => void }) {
           </button>
 
           {/* Desktop Links - Left */}
-          <nav className="hidden md:flex items-center space-x-8">
+          <nav className="hidden md:flex items-center space-x-10">
             {navLinks.slice(0, 2).map((link) => (
               <Link
                 key={link.name}
                 to={link.path}
-                className="text-sm uppercase tracking-widest font-medium hover:opacity-70 transition-opacity"
+                className="text-[10px] uppercase tracking-[0.25em] font-medium hover:opacity-50 transition-opacity"
               >
                 {link.name}
               </Link>
@@ -71,21 +71,21 @@ export function Navbar({ onOpenSearch }: { onOpenSearch: () => void }) {
           <Link
             to="/"
             className={cn(
-              "absolute left-1/2 -translate-x-1/2 font-serif text-2xl tracking-widest uppercase transition-all duration-500",
-              (isScrolled || !isHome) ? "text-zinc-900" : "text-white drop-shadow-sm"
+              "absolute left-1/2 -translate-x-1/2 font-serif text-3xl tracking-[0.2em] uppercase transition-all duration-500",
+              (isScrolled || !isHome) ? "text-zinc-900" : "text-white drop-shadow-md"
             )}
-            style={{ fontWeight: 500 }}
+            style={{ fontWeight: 400 }}
           >
             Aura Lumina
           </Link>
 
           {/* Desktop Links - Right */}
-          <nav className="hidden md:flex items-center space-x-8">
+          <nav className="hidden md:flex items-center space-x-10">
             {navLinks.slice(2).map((link) => (
               <Link
                 key={link.name}
                 to={link.path}
-                className="text-sm uppercase tracking-widest font-medium hover:opacity-70 transition-opacity"
+                className="text-[10px] uppercase tracking-[0.25em] font-medium hover:opacity-50 transition-opacity"
               >
                 {link.name}
               </Link>
